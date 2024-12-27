@@ -86,11 +86,6 @@ body {
     color: #3a3a3a;
 }
 
-h1 {
-    font-family: "Oswald", serif;
-    
-}
-
 /* Header */
 header {
     background-color: #fff;
@@ -99,6 +94,18 @@ header {
     z-position:99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+}
+
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-family: "Oswald", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
 }
 
 /* Main */
