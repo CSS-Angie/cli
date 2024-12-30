@@ -86,19 +86,30 @@ nav-toggle-label {
 
 /* Main */
 main {
-    background-color: lightblue;
-    /* Make main element take up any surplus space to push footer down. Flex is shorthand for flex-grow, flex-shrink, flex-basis */
+        /* Make main element take up any surplus space to push footer down. Flex is shorthand for flex-grow, flex-shrink, flex-basis */
     flex: 1 0 auto;
     margin-top: 47px;
 }
 
+#hero {
+  height: 600px;
+  width: 100%;
+  background: url("../images/hero-image.webp") no-repeat center center/cover;
+
+
 /* Footer */
-footer {
-    background-color: orange;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
-footer li {
-  list-style-type: none;
+#social-networks i {
+    color:#3a3a3a;
+    font-size: 160%;
+    padding: 5%;
 }
 
 /* Media query: tablet and larger (768px and up) */
