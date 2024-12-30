@@ -16,6 +16,13 @@ body {
     font-family: 'Lato', 'sans-serif';
 }
 
+h1, h2, h3 {
+  font-family: "Oswald", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
+}
+
 /* Header */
 header {
     background-color: #fff;
@@ -32,13 +39,6 @@ header {
 header a{
   text-decoration: none;
   color: inherit;
-}
-
-h1 {
-  font-family: "Oswald", serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #252525;
 }
 
 #menu {
@@ -91,12 +91,29 @@ main {
     margin-top: 47px;
 }
 
+/* hero section */
 #hero {
   height: 600px;
   width: 100%;
   background: url("../images/hero-image.webp") no-repeat center center/cover;
+  position: relative;
+}
 
+#cover-text {
+  background-color: rgba(241, 109, 107, 0.7); /* last number is opacitiy */
+  font-size: 130%;
+  position: absolute;
+  padding-top: 40px;
+  padding-left: 10px;
+  width: 80%;
+  bottom: 30px;
+  min-height: 200px;
+}
 
+#cover-text > h2, #cover-text > h3 {
+  color: #fff;
+
+}
 /* Footer */
 #social-networks {
     text-align: center;
@@ -143,6 +160,13 @@ main {
 
     main {
       margin-top: 79px;
+    }
+
+    #cover-text {
+      font-size: 130%;
+      padding-top: 30px;
+      right: 50px;
+      width: 300px;
     }
 }
 
