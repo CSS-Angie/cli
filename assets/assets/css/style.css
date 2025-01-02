@@ -146,9 +146,34 @@ main {
 }
 
 #benefits-image {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/*meetup section*/
+#times {
+  background: url("../images/dublin-city.webp") no-repeat center center/cover;
+  position: relative;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+#times div {
+  color:#fafafa;
+  background-color: rgba(0, 0, 0, .6);
+  padding: 15px;
+  text-align: center;
+  /* This will not wrap on screens less than 400px wide.
+  Each div will expand to fill the available space in its row */
+  flex-basis: 200px;
+  flex-grow: 1;
+  /*Creates a grid over bg img*/
+  border: 2px solid white;
+}
+
+#times h3 {
+  color:#fafafa;
 }
 
 /* Footer */
@@ -236,7 +261,7 @@ main {
 @media screen and (min-width: 1200px) {
 
   #benefits {
-    display:flex;
+    display: flex;
     flex-direction: row;
   }
 
