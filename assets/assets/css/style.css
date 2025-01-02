@@ -3,20 +3,23 @@
 
 /* Asterix overrides default styles added by browsers*/
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-/*General style */
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color: #3a3a3a;
-    font-family: 'Lato', 'sans-serif';
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-h1, h2, h3 {
+/*General style */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #3a3a3a;
+  font-family: 'Lato', 'sans-serif';
+}
+
+h1,
+h2,
+h3 {
   font-family: "Oswald", serif;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -24,23 +27,23 @@ h1, h2, h3 {
 }
 
 .hidden-heading {
-  display:none;
+  display: none;
 }
 
 /* Header */
 header {
-    background-color: #fff;
-    padding: 0 1rem;
-    position:fixed;
-    z-index:99;
-    width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+  background-color: #fff;
+  padding: 0 1rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-header a{
+header a {
   text-decoration: none;
   color: inherit;
 }
@@ -67,13 +70,13 @@ nav {
   left: 0;
   box-shadow: 0 2px 2px #3a3a3a;
   padding: 0 1rem;
-  display:none;
-  top:100%;
+  display: none;
+  top: 100%;
 }
 
 /*nav toggle */
 #nav-toggle:checked~nav {
-  display:block;
+  display: block;
 }
 
 #nav-toggle {
@@ -86,9 +89,12 @@ nav-toggle-label {
 
 /* Main */
 main {
-        /* Make main element take up any surplus space to push footer down. Flex is shorthand for flex-grow, flex-shrink, flex-basis */
-    flex: 1 0 auto;
-    margin-top: 47px;
+  /* Make main element take up any surplus space to push footer down. Flex is shorthand for flex-grow, flex-shrink, flex-basis */
+  flex: 1 0 auto;
+  margin-top: 47px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 /* hero section */
@@ -100,7 +106,8 @@ main {
 }
 
 #cover-text {
-  background-color: rgba(241, 109, 107, 0.7); /* last number is opacitiy */
+  background-color: rgba(241, 109, 107, 0.7);
+  /* last number is opacitiy */
   font-size: 130%;
   position: absolute;
   padding-top: 40px;
@@ -110,7 +117,8 @@ main {
   min-height: 200px;
 }
 
-#cover-text > h2, #cover-text > h3 {
+#cover-text>h2,
+#cover-text>h3 {
   color: #fff;
 }
 
@@ -121,7 +129,7 @@ main {
 }
 
 #reasons h2 {
-  font-size:280%;
+  font-size: 280%;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -159,12 +167,12 @@ main {
 #times {
   background: url("../images/dublin-city.webp") no-repeat center center/cover;
   position: relative;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
 #times div {
-  color:#fafafa;
+  color: #fafafa;
   background-color: rgba(0, 0, 0, .6);
   padding: 15px;
   text-align: center;
@@ -177,15 +185,15 @@ main {
 }
 
 #times h3 {
-  color:#fafafa;
+  color: #fafafa;
 }
 
 /* gallery page*/
 
 #photos img {
-  width:100%;
+  width: 100%;
   /*if broken down in inspection, alt-text is readible. without line-height, it is not, because of the line-height change in photos */
-  line-height:1em;
+  line-height: 1em;
 }
 
 #photos {
@@ -194,17 +202,11 @@ main {
 
 /*signup page */
 
-main #signup {
-  display: flex;
-  
-}
-
 #signup {
-  background: url(../images/signup-image.webp) no-repeat center/cover;
+  background: url(../images/signup-image.webp);
+  background-size: cover;
   background-position: 75%;
-  flex-wrap: wrap;
   flex-grow: 1;
-  margin: 30px auto 20px;
   padding: 20px 10% 0 10%;
 }
 
@@ -219,16 +221,17 @@ main #signup {
   padding: 30px;
 }
 
-#first-name, #last-name {
+#first-name,
+#last-name {
   margin-bottom: 30px;
 }
 
 .text-input {
   background-color: transparent;
-  color:#fafafa;
+  color: #fafafa;
   border: 1px solid #fafafa;
   border-radius: 2px;
-  padding: 5px 0 20px 0;
+  padding: 0 5px;
   width: 100%;
   height: 25px;
 }
@@ -237,7 +240,7 @@ main #signup {
   display: flex;
   justify-content: space-between;
   margin: 10px;
-  width:100%;
+  width: 100%;
 
 }
 
@@ -256,17 +259,17 @@ main #signup {
 
 /* Footer */
 #social-networks {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
 }
 
 #social-networks i {
-    color:#3a3a3a;
-    font-size: 160%;
-    padding: 5%;
+  color: #3a3a3a;
+  font-size: 160%;
+  padding: 5%;
 }
 
 /* Media query: tablet and larger (576px and up) */
@@ -279,6 +282,7 @@ main #signup {
 
 /* Media query: tablet and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
   /* header */
   nav {
     display: block;
@@ -287,65 +291,88 @@ main #signup {
     width: fit-content;
     padding-right: 1rem;
   }
-    #menu {
+
+  #menu {
     display: flex;
   }
 
-    #menu > li {
-      padding-left: 1rem;
-    }
+  #menu>li {
+    padding-left: 1rem;
+  }
 
-    .nav-toggle-label {
-      display: none;
-    }
+  .nav-toggle-label {
+    display: none;
+  }
 
-    #logo {
-      font-size: 280%;
-      line-height: 75px;
-      margin: 0 0.5rem;
+  #logo {
+    font-size: 280%;
+    line-height: 75px;
+    margin: 0 0.5rem;
 
-    }
+  }
 
-    main {
-      margin-top: 79px;
-    }
+  main {
+    margin-top: 79px;
+  }
 
-    /*HERO*/
-    #cover-text {
-      padding-top: 30px;
-      right: 50px;
-      width: 300px;
-    }
+  /*HERO*/
+  #cover-text {
+    padding-top: 30px;
+    right: 50px;
+    width: 300px;
+  }
 
-    /*reasons*/ 
-    
-    #benefits-physical, #benefits-mental {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
+  /*reasons*/
 
-    #benefits-physical>div, #benefits-mental>div {
-      width: 75%;
-    }  
-    #benefits-mental>div {
-      text-align: end;
-      align-self: flex-end;
-    }
+  #benefits-physical,
+  #benefits-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
-    #photos {
-      column-count: 3;
-      column-gap: 0;
-    }
+  #benefits-physical>div,
+  #benefits-mental>div {
+    width: 75%;
+  }
 
-    #signup {
-      position: relative;
-      background-position: center;
-    }
+  #benefits-mental>div {
+    text-align: end;
+    align-self: flex-end;
+  }
+
+  #photos {
+    column-count: 3;
+    column-gap: 0;
+  }
+
+  /*sign up page */
+
+  #signup {
+    background-position: center;
+    position: relative;
+  }
+
+  #signup-form {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 10%;
+    max-width: 400px;
+  }
+
+  .text-input:hover {
+    border-color: #f16c6b;
+  }
+
+  .join-button:hover {
+    background-color: #fafafa;
+    color: #454b1b;
+  }
 }
 
 /* Media query: large devices (992px and up) */
 @media screen and (min-width: 992px) {
+
   /* header */
   nav a:hover {
     border-bottom: 1px solid #3a3a3a;
@@ -372,7 +399,7 @@ main #signup {
     order: 1;
   }
 
- #benefits-metal>div {
+  #benefits-metal>div {
     align-self: flex-start;
   }
 
